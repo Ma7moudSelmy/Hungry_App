@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 import 'package:hungry_app/Core/Constants/app_colors.dart';
 
 class SplashView extends StatelessWidget {
@@ -9,14 +10,15 @@ class SplashView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primary,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-
-        children: [
-          SizedBox(height: 280),
-
-          SvgPicture.asset('assets/images/logo/logo.svg'),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            Gap(280),
+            SvgPicture.asset('assets/logo/logo.svg'),
+            Spacer(),
+            Image.asset("assets/splash/image 1.png"),
+          ],
+        ),
       ),
     );
   }

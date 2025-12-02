@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hungry_app/splash.dart';
+import 'package:hungry_app/features/auth/Views/login_view.dart';
 
 void main() {
   runApp(Hunget());
@@ -12,7 +12,7 @@ class Hunget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashView(),
+      home: LoginView(),
     );
   }
 }
