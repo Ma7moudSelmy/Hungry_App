@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hungry_app/features/auth/Views/login_view.dart';
+import 'package:hungry_app/features/auth/Views/signup_view.dart';
 
 void main() {
-  runApp(Hunget());
+  runApp(const Hunget());
 }
 
 class Hunget extends StatelessWidget {
@@ -12,7 +12,7 @@ class Hunget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginView(),
+      home: SignupView(),
     );
   }
 }
