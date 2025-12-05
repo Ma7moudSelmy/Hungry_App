@@ -58,6 +58,7 @@ class _RootState extends State<Root> {
           });
         },
         children: screens,
+        physics: const NeverScrollableScrollPhysics(),
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: AppColors.primary,
