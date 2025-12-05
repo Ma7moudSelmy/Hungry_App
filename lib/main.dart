@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hungry_app/features/auth/Views/signup_view.dart';
+import 'package:hungry_app/root.dart';
 
 void main() {
   runApp(const Hunget());
@@ -10,9 +10,6 @@ class Hunget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SignupView(),
-    );
+    return const MaterialApp(debugShowCheckedModeBanner: false, home: Root());
   }
 }

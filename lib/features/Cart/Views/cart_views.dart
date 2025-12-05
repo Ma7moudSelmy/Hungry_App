@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProfileVeiw extends StatelessWidget {
-  const ProfileVeiw({super.key});
+class CartViews extends StatelessWidget {
+  const CartViews({super.key});
 
   @override
   Widget build(BuildContext context) {

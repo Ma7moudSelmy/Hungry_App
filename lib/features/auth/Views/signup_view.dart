@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:hungry_app/Core/Constants/app_colors.dart';
 import 'package:hungry_app/features/auth/Widgets/CustomAuthBtn.dart';
-import 'package:hungry_app/shared/custom_text.dart';
 import 'package:hungry_app/shared/custom_text_form_filed.dart';
 
 class SignupView extends StatelessWidget {
