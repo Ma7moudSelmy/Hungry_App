@@ -22,8 +22,9 @@ class _RootState extends State<Root> {
     super.initState();
     screens = const [
       HomeView(),
-      OrderHistoryView(),
       CartViews(),
+      OrderHistoryView(),
+
       ProfileVeiw(),
     ];
     controller = PageController(initialPage: currentScreen);
@@ -60,17 +61,25 @@ class _RootState extends State<Root> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: AppColors.primary,
+
         currentIndex: currentScreen,
+
         type: BottomNavigationBarType.fixed,
+
         selectedItemColor: Colors.white,
+
         unselectedItemColor: Colors.white54,
+
         onTap: onNavTap,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.history), label: "Orders"),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
             label: "Cart",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.local_restaurant_sharp),
+            label: 'Orders History',
           ),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
         ],
